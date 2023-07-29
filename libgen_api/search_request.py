@@ -59,7 +59,6 @@ class SearchRequest:
             search_url = (
                 f"{self.base_url}?req={query_parsed}&column=identifier"
             )
-        print(search_url)
         search_page = requests.get(search_url)
         return search_page
 
